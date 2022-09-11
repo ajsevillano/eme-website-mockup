@@ -48,9 +48,23 @@ body {
   -moz-box-shadow: -1px -1px 0px 5px rgba(255, 255, 255, 1) inset;
 }
 
+aside {
+  display: none;
+}
+
+main {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 568px) {
   .grid {
     max-width: 90%;
+  }
+  aside {
+    display: none;
   }
 }
 
@@ -58,10 +72,19 @@ body {
   .grid {
     max-width: 90%;
   }
+  aside {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   .grid {
     max-width: 1000px;
+  }
+  aside {
+    display: block;
+    background-color: #303030;
+    min-height: 100vh;
+    width: 20%;
   }
 }
