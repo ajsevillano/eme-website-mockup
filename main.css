@@ -6,29 +6,40 @@
 
 .grid {
   display: grid;
-  max-width: 1000px;
   margin: auto;
+  max-width: 80%;
+  border-bottom: 1px solid #303030;
+  border-left: 1px solid #303030;
+  box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
+  -webkit-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
+  -moz-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
 }
 
 .col {
-  background-color: pink;
+  background-color: #f7f7f7;
   padding: 16px;
+  height: 166.5px;
+  border-top: 1px solid #303030;
+  border-right: 1px solid #303030;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
   }
 }
 
 @media (min-width: 960px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 60%;
   }
 }
 
 @media (min-width: 1200px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
+    max-width: 1000px;
   }
 }
