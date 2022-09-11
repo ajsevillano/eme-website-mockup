@@ -16,8 +16,12 @@ p {
   height: 100vh;
   min-height: 100vh;
   background-color: #f7f7f7;
-  outline: 15px solid #303030;
-  outline-offset: -15px;
+  /* outline: 15px solid #303030;
+  outline-offset: -15px; */
+}
+
+.sidebar {
+  display: none;
 }
 
 .main-section {
@@ -29,13 +33,14 @@ p {
 
 .boxes-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
   -webkit-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
   -moz-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
   border-bottom: 1px solid black;
   border-left: 1px solid black;
-  width: 65%;
+  width: 98%;
+  margin-top: 126rem;
 }
 
 .box {
@@ -51,8 +56,19 @@ p {
   /* La barra lateral no se muestra al menos que la pantalla sea
   más grande que 600px */
   .sidebar {
-    max-width: 20%;
-    width: 20%;
+    max-width: 30%;
+    width: 30%;
     background-color: antiquewhite;
+  }
+
+  .boxes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
+    -webkit-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
+    -moz-box-shadow: 13px 14px 0px 0px rgba(48, 48, 48, 0.75);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 65%;
   }
 }
