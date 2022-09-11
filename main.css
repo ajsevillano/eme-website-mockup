@@ -11,8 +11,45 @@ body {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   min-height: 100%;
+  flex-direction: column;
+}
+
+/* Sección principal con menu */
+.menu-cuadricula {
+  min-height: 600px;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+/* Sección descubre black room */
+.descubre-blackroom {
+  width: 100%;
+  min-height: 400px;
+  background-color: #303030;
+}
+
+/* Seccion galería de arte */
+.galeria-de-arte {
+  width: 100%;
+  min-height: 600px;
+  background-color: #f7f7f7;
+}
+
+/* banner rotativo */
+.banner-rotativo {
+  width: 100%;
+  min-height: 50px;
+  background-color: #303030;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #303030;
 }
 
 .grid {

@@ -1,0 +1,6 @@
+/* Sección principal con menu */
+.hero-section {
+  min-height: 400px;
+  background-color: #bdbdbd;
+  width: 100%;
+}
